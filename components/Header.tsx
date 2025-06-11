@@ -3,7 +3,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const navigation: string[] = ["Home", "About", "Projects", "Resume"];
+interface Nav {
+  name: string;
+  path: string;
+}
+
+const navigation: Nav[] = [
+  { name: "Home", path: "/assets/icon-home.svg" },
+  { name: "About", path: "/assets/icon-person.svg" },
+  { name: "Projects", path: "/assets/icon-project.svg" },
+  { name: "Resume", path: "/assets/icon-document.svg" },
+];
 
 export default function Header() {
   const [displayMenu, setDisplayMenu] = useState<boolean>(false);
@@ -24,8 +34,9 @@ export default function Header() {
               return (
                 <li
                   key={index}
-                  className="cursor-pointer hover:text-[#27DEBF] transition-[0.2s] xl:text-[18px]">
-                  <Link href={`/${item}`}>{item}</Link>
+                  className="cursor-pointer hover:text-[#27DEBF] transition-[0.2s] xl:text-[18px] flex gap-2 items-center">
+                  <img src={item.path} alt="" />
+                  <Link href={`/${item.name}`}>{item.name}</Link>
                 </li>
               );
             })}
@@ -51,13 +62,14 @@ export default function Header() {
               exit={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.15 }}
               className="fixed right-0 top-0 h-full bg-[#272727] w-[180px] shadow-xl z-50">
-              <ul className="flex flex-col gap-5">
+              <ul className="flex flex-col gap-5 mt-25">
                 {navigation.map((item, index) => (
                   <li
-                    className="text-white"
                     key={index}
-                    onClick={() => setDisplayMenu(false)}>
-                    <Link href={`/${item}`}>{item}</Link>
+                    onClick={() => setDisplayMenu(false)}
+                    className="text-white flex items-center gap-2">
+                    <img src={item.path} alt="" className="w-[17px] " />
+                    <Link href={`/${item.name}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>

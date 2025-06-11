@@ -47,7 +47,7 @@ export default function page() {
           modules={[Navigation, Autoplay]}>
           {data.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="cursor-grab active:cursor-grabbing hover:scale-[1.04] transition-[0.2s] flex flex-col justify-between gap-5 p-5 border-1 border-[#27dec000] rounded-[10px] bg-[#1e1e1e] shadow-[0_0_12px_2px_#27DEBF66] hover:shadow-[0_0_12px_8px_#27DEBF66] min-h-[470px] xl:min-h-[600px] xl:p-8 xl:gap-8">
+              <div className="cursor-grab active:cursor-grabbing hover:scale-[1.04] transition-[0.2s] flex flex-col justify-between gap-5 p-5 border-1 border-[#27dec000] rounded-[10px] bg-[#1e1e1e] shadow-[0_0_12px_2px_#27dec039] hover:shadow-[0_0_12px_8px_#27DEBF66] min-h-[470px] xl:min-h-[600px] xl:p-8 xl:gap-8">
                 <img
                   src={item.thumbnail}
                   alt="project thumbnail"
@@ -61,15 +61,25 @@ export default function page() {
                     {item.description}
                   </p>
                 </div>
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center items-center gap-3 xl:gap-7">
                   <a
                     href={item.repo}
-                    className="text-[#272727] bg-[#27DEBF] px-3 py-1 rounded-md">
+                    className="text-[#020202be] bg-[#27DEBF] px-3 py-1 rounded-md xl:px-5 flex items-center gap-1 text-[14px] font-semibold hover:scale-[1.04] transition-[0.2s]">
+                    <img
+                      src="/assets/icon-github-button.svg"
+                      alt="github icon"
+                      className="w-[20px]"
+                    />
                     GitHub
                   </a>
                   <a
                     href={item.live}
-                    className="text-[#272727] bg-[#27DEBF] px-3 py-1 rounded-md">
+                    className="text-[#020202be] text-[14px] font-semibold bg-[#27DEBF] px-3 py-1 rounded-md xl:px-5 flex gap-1 items-center hover:scale-[1.04] transition-[0.2s]">
+                    <img
+                      src="/assets/icon-website.svg"
+                      alt="website icon"
+                      className="w-[20px]"
+                    />
                     Live
                   </a>
                 </div>
