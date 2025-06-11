@@ -47,18 +47,18 @@ export default function ProjectsPage() {
           }}
           modules={[Navigation, Autoplay]}>
           {data.map((item, idx) => (
-            <SwiperSlide key={idx}>
+            <SwiperSlide key={idx} className="h-full">
               <div className="cursor-grab active:cursor-grabbing hover:scale-[1.04] transition-[0.2s] flex flex-col justify-between gap-5 p-5 border-1 border-[#27dec000] rounded-[10px] bg-[#1e1e1e] shadow-[0_0_12px_2px_#27dec039] hover:shadow-[0_0_12px_8px_#27DEBF66] min-h-[470px] xl:min-h-[600px] xl:p-8 xl:gap-8">
                 <img
                   src={item.thumbnail}
                   alt="project thumbnail"
                   className="rounded-[10px]"
                 />
-                <div className="flex flex-col gap-3 xl:gap-10">
+                <div className="flex flex-col gap-5 xl:gap-10">
                   <h2 className="text-center text-white text-[18px] xl:text-[28px]">
                     {item.name}
                   </h2>
-                  <p className="text-white text-[14px] xl:text-[16px]">
+                  <p className="text-white text-[12px] xl:text-[16px]">
                     {item.description}
                   </p>
                 </div>
