@@ -3,7 +3,8 @@ export default function Footer() {
     <footer className="bg-[#121212] p-5 flex justify-between border-t-1 border-t-[#ffffff48] xl:px-50 xl:py-8">
       <div className="flex flex-col gap-4">
         <span className="text-white text-[12px] xl:text-[15px]">
-          Designed by <span className="text-[#27DEBF]">Tsotne Tsintsadze</span>
+          Designed and built by{" "}
+          <span className="text-[#27DEBF]">Tsotne Tsintsadze</span>
         </span>
         <span className="text-[#c7c7c7] text-[13px]">
           cotnecincadze998@gmail.com
