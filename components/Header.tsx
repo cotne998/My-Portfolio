@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { li } from "framer-motion/client";
 
 const navigation: string[] = ["Home", "About", "Projects", "Resume"];
 
@@ -11,22 +10,22 @@ export default function Header() {
 
   return (
     <>
-      <header className="p-[15px] flex justify-between bg-[#313131] items-center md:p-[20px]">
+      <header className="p-[15px] flex justify-between bg-[#313131] items-center md:p-[20px] xl:px-25">
         <h2 className="text-[20px] text-[#27DEBF] md:text-[24px]">TT</h2>
         <img
           src="/assets/icon-hamburger.png"
           alt="menu icon"
-          className="cursor-pointer md:hidden"
+          className="cursor-pointer md:hidden w-[20px]"
           onClick={() => setDisplayMenu(!displayMenu)}
         />
         <nav className="hidden md:block">
-          <ul className="flex gap-8 text-white">
+          <ul className="flex gap-8 text-white xl:gap-15">
             {navigation.map((item, index) => {
               return (
                 <li
                   key={index}
-                  className="cursor-pointer hover:text-[#27DEBF] transition-[0.2s]">
-                  {item}
+                  className="cursor-pointer hover:text-[#27DEBF] transition-[0.2s] xl:text-[18px]">
+                  <Link href={`/${item}`}>{item}</Link>
                 </li>
               );
             })}
@@ -36,7 +35,6 @@ export default function Header() {
       <AnimatePresence>
         {displayMenu && (
           <>
-            {/* Overlay */}
             <motion.div
               className="fixed inset-0 z-40"
               initial={{ opacity: 0 }}
@@ -46,7 +44,6 @@ export default function Header() {
               style={{ background: "#000" }}
               onClick={() => setDisplayMenu(false)}
             />
-            {/* Menu */}
             <motion.nav
               style={{ padding: "15px" }}
               initial={{ opacity: 0, x: 100 }}

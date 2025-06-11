@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Audiophile Ecommerce Website",
+    "description": "Audiophile is a responsive eCommerce website for high-end audio products, built with React, TypeScript, styled-components, and useReducer. It features a clean UI, smooth UX, and structured state management.",
+    "repo": "https://github.com/cotne998/audiophile-ecommerce-website-2",
+    "live": "https://audiophile-ecommerce-website-2.vercel.app/",
+    "thumbnail": "/assets/thumbnail-audiophile.png"
+  },
+  {
+    "name": "Entertaining Web App",
+    "description": "Entertaining Web App is a React-based web app for browsing movies and TV shows, built with React Router, styled-components, and React Hook Form. It features powerful search and filtering capabilities, providing users with an intuitive and responsive interface to quickly find and explore their favorite content.",
+    "repo": "https://github.com/cotne998/Entertaining-web-app",
+    "live": "https://entertaining-web-app.vercel.app/",
+    "thumbnail": "/assets/thumbnail-entertaining.png"
+  },
+  {
+    "name": "Digital Corp",
+    "description": "A modern team portfolio site built with React and TypeScript, showcasing team members, goals, and values with a clean, responsive design.",
+    "repo": "https://github.com/cotne998/DigitalCorp",
+    "live": "https://digital-corp.vercel.app/",
+    "thumbnail": "/assets/thumbnail-digital.png"
+  },
+  {
+    "name": "Ecommerce Product Page",
+    "description": "A single product page built with React, featuring detailed product info and an add-to-cart functionality. Designed with a clean layout and smooth user interaction.",
+    "repo": "https://github.com/cotne998/eCommerce-product-page",
+    "live": "https://e-commerce-product-page-nu-one.vercel.app/",
+    "thumbnail": "/assets/thumbnail-ecommerce.png"
+  },
+  {
+    "name": "Lukoil Georgia Homepage Redesign",
+    "description": "This is a redesigned and upgraded main page of Lukoil.ge georgian website. The redesign was completed with Tailwind.css and some libraries such as Swiper.js.",
+    "repo": "https://github.com/cotne998/Lukoil-Page-Redesign",
+    "live": "https://lukoil-page-redesign.vercel.app/",
+    "thumbnail": "/assets/thumbnail-lukoil.png"
+  },
+  {
+    "name": "GitHub User Search",
+    "description": "A React app that lets you search for GitHub users by username. Fetches and displays user data in real-time using the GitHub API.",
+    "repo": "https://github.com/cotne998/Lukoil-Page-Redesign",
+    "live": "https://github-user-search-six-indol.vercel.app/",
+    "thumbnail": "/assets/thumbnail-github.png"
+  },
+  {
+    "name": "Planets Fact Site",
+    "description": "An informative React website about planets, featuring dynamic routing for each planet's detail page.",
+    "repo": "https://github.com/cotne998/Planets-fact-site",
+    "live": "https://planets-fact-site-five-psi.vercel.app/",
+    "thumbnail": "/assets/thumbnail-planets.png"
+  }
+]
