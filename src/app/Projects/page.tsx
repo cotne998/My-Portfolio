@@ -5,7 +5,7 @@ import data from "../../app/projects.json";
 import "swiper/css";
 import { useRef } from "react";
 
-export default function page() {
+export default function ProjectsPage() {
   const swiperRef = useRef<any>(null);
   return (
     <section className="p-7 flex flex-col xl:gap-5">
