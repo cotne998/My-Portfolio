@@ -1,12 +1,13 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType } from "swiper";
+import { useRef } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
 import data from "../../app/projects.json";
 import "swiper/css";
-import { useRef } from "react";
 
 export default function ProjectsPage() {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section className="p-7 flex flex-col xl:gap-5">
       <h1 className="text-[20px] text-white text-center font-bold tracking-widest xl:text-[32px]">
