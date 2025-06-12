@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <h1 className="text-[20px] text-white text-center font-bold tracking-widest xl:text-[32px]">
         My <span className="text-[#27DEBF]">Projects</span>
       </h1>
-      <section className="relative p-[20px]">
+      <section className="relative xl:p-5">
         <button
           className="absolute left-0 top-[50%]  translate-y-[-50%] cursor-pointer z-10"
           onClick={() => swiperRef.current?.slidePrev()}>
@@ -48,7 +48,7 @@ export default function ProjectsPage() {
           modules={[Navigation, Autoplay]}>
           {data.map((item, idx) => (
             <SwiperSlide key={idx} className="h-full">
-              <div className="cursor-grab active:cursor-grabbing hover:scale-[1.04] transition-[0.2s] flex flex-col justify-between gap-5 p-5 border-1 border-[#27dec000] rounded-[10px] bg-[#1e1e1e] shadow-[0_0_12px_2px_#27dec039] hover:shadow-[0_0_12px_8px_#27DEBF66] min-h-[470px] xl:min-h-[600px] xl:p-8 xl:gap-8">
+              <div className="cursor-grab active:cursor-grabbing hover:scale-[1.04] transition-[0.2s] flex flex-col justify-between gap-5 p-3 border-1 border-[#27dec000] rounded-[10px] bg-[#1e1e1e] shadow-[0_0_12px_2px_#27dec039] hover:shadow-[0_0_12px_8px_#27DEBF66]  xl:min-h-[600px] xl:p-8 xl:gap-8">
                 <img
                   src={item.thumbnail}
                   alt="project thumbnail"

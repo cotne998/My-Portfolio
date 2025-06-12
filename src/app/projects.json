@@ -1,14 +1,14 @@
 [
   {
     "name": "Audiophile Ecommerce Website",
-    "description": "Audiophile is a responsive eCommerce website for high-end audio products, built with React, TypeScript, styled-components, and useReducer. It features a clean UI, smooth UX, and structured state management.",
+    "description": "Audiophile is a responsive eCommerce site for premium audio gear, built with React, TypeScript, and useReducer.",
     "repo": "https://github.com/cotne998/audiophile-ecommerce-website-2",
     "live": "https://audiophile-ecommerce-website-2.vercel.app/",
     "thumbnail": "/assets/thumbnail-audiophile.png"
   },
   {
     "name": "Entertaining Web App",
-    "description": "Entertaining Web App is a React-based web app for browsing movies and TV shows, built with React Router, styled-components, and React Hook Form. It features powerful search and filtering capabilities, providing users with an intuitive and responsive interface to quickly find and explore their favorite content.",
+    "description": "Entertaining Web App is a React app for browsing movies and TV shows, featuring search, filters, and a responsive UI.",
     "repo": "https://github.com/cotne998/Entertaining-web-app",
     "live": "https://entertaining-web-app.vercel.app/",
     "thumbnail": "/assets/thumbnail-entertaining.png"
