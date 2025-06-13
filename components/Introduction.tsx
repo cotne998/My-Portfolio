@@ -6,9 +6,12 @@ export default function Introduction() {
   const [text] = useTypewriter({
     words: [
       "Frontend Developer",
-      "Graphic Designer",
+      "React Enthusiast",
+      "Next.JS Developer",
+      "Creative Coder",
+      "Web Interface Specialist",
       "UI/UX Designer",
-      "Junior Frontend Engineer",
+      "React & TypeScript Developer",
     ],
     loop: true,
   });
