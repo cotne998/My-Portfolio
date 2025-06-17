@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface Nav {
@@ -20,14 +20,36 @@ export default function Header() {
 
   return (
     <>
-      <header className="p-[15px] flex justify-between bg-[#313131] items-center md:p-[20px] xl:px-25">
+      <header className="p-[15px] flex justify-between bg-[#313131] items-center md:p-[20px] xl:px-25 z-100 fixed w-full">
         <h2 className="text-[20px] text-[#27DEBF] md:text-[24px]">TT</h2>
-        <img
-          src="/assets/icon-hamburger.png"
-          alt="menu icon"
-          className="cursor-pointer md:hidden w-[20px]"
-          onClick={() => setDisplayMenu(!displayMenu)}
-        />
+        {displayMenu ? (
+          <AnimatePresence>
+            <motion.img
+              src={"/assets/icon-close.svg"}
+              initial={{ opacity: 0, rotate: 0 }}
+              animate={{ opacity: 1, rotate: 90 }}
+              exit={{ opacity: 0, rotate: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 13,
+                duration: 0.2,
+              }}
+              alt="close icon"
+              onClick={() => setDisplayMenu(false)}
+              className="w-[20px] cursor-pointer md:hidden"
+            />
+          </AnimatePresence>
+        ) : (
+          <AnimatePresence>
+            <motion.img
+              className="w-[20px] cursor-pointer md:hidden"
+              src={"/assets/icon-hamburger.svg"}
+              alt="menu icon"
+              onClick={() => setDisplayMenu(true)}
+            />
+          </AnimatePresence>
+        )}
         <nav className="hidden md:block">
           <ul className="flex gap-8 text-white xl:gap-15">
             {navigation.map((item, index) => {
@@ -47,22 +69,29 @@ export default function Header() {
         {displayMenu && (
           <>
             <motion.div
-              className="fixed inset-0 z-40"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.2 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.15 }}
+              className="fixed inset-0 z-40 md:hidden"
+              initial={{ opacity: 0, y: -300 }}
+              animate={{ opacity: 0.2, y: 0 }}
+              exit={{ opacity: 0, y: -100 }}
+              transition={{
+                duration: 0.2,
+              }}
               style={{ background: "#000" }}
               onClick={() => setDisplayMenu(false)}
             />
             <motion.nav
-              style={{ padding: "15px" }}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.15 }}
-              className="fixed right-0 top-0 h-full bg-[#272727] w-[180px] shadow-xl z-50">
-              <ul className="flex flex-col gap-5 mt-25">
+              initial={{ opacity: 1, y: -300 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 1, y: -300 }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 23,
+                bounce: 1,
+                duration: 0.2,
+              }}
+              className="fixed top-0 w-full bg-[#272727] p-5 pt-20  shadow-xl z-50 md:hidden">
+              <ul className="flex flex-col gap-5">
                 {navigation.map((item, index) => (
                   <li
                     key={index}
