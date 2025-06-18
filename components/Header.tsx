@@ -37,13 +37,13 @@ export default function Header() {
               }}
               alt="close icon"
               onClick={() => setDisplayMenu(false)}
-              className="w-[20px] cursor-pointer md:hidden"
+              className="w-[27px] cursor-pointer md:hidden"
             />
           </AnimatePresence>
         ) : (
           <AnimatePresence>
             <motion.img
-              className="w-[20px] cursor-pointer md:hidden"
+              className="w-[27px] cursor-pointer md:hidden"
               src={"/assets/icon-hamburger.svg"}
               alt="menu icon"
               onClick={() => setDisplayMenu(true)}
