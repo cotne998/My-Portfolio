@@ -1,5 +1,12 @@
 [
   {
+    "name": "MultiPlay",
+    "description": "MultiPlay is a React-based web app featuring simple 2-player games, built with Tailwind CSS, Context API & Swiper.js. The project is actively maintained with new updates coming soon.",
+    "repo": "https://github.com/cotne998/MultiPlay",
+    "live": "https://multi-play-silk.vercel.app/",
+    "thumbnail": "/assets/thumbnail-multiplay.png"
+  },
+  {
     "name": "Audiophile Ecommerce Website",
     "description": "Audiophile is a responsive eCommerce site for premium audio gear, built with React, TypeScript, and useReducer.",
     "repo": "https://github.com/cotne998/audiophile-ecommerce-website-2",
