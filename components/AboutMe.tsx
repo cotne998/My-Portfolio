@@ -1,6 +1,17 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function AboutMe() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   return (
-    <section className="p-5 flex flex-col gap-7 md:flex-row md:items-center md:justify-center md:gap-20 xl:p-25">
+    <section
+      data-aos="zoom-in-down"
+      className="p-5 flex flex-col gap-7 md:flex-row md:items-center md:justify-center md:gap-20 xl:p-25">
       <div className="flex flex-col gap-4 md:max-w-[400px] xl:max-w-[700px]">
         <h1 className="text-center text-[18px] text-[#27DEBF] font-semibold md:text-start md:text-[24px]">
           ABOUT ME

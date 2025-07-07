@@ -1,4 +1,8 @@
 "use client";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { useRef } from "react";
@@ -7,13 +11,19 @@ import data from "../../app/projects.json";
 import "swiper/css";
 
 export default function ProjectsPage() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section className="p-7 flex flex-col xl:gap-5">
-      <h1 className="text-[20px] text-white text-center font-bold tracking-widest xl:text-[32px]">
+      <h1
+        data-aos="zoom-in-down"
+        className="text-[20px] text-white text-center font-bold tracking-widest xl:text-[32px]">
         My <span className="text-[#27DEBF]">Projects</span>
       </h1>
-      <section className="relative xl:p-5">
+      <section data-aos="zoom-in-up" className="relative xl:p-5">
         <button
           className="absolute left-0 top-[50%]  translate-y-[-50%] cursor-pointer z-10"
           onClick={() => swiperRef.current?.slidePrev()}>
