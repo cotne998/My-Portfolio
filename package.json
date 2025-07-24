@@ -14,10 +14,8 @@
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-image-lightbox": "^5.1.4",
     "react-simple-typewriter": "^5.0.1",
-    "swiper": "^11.2.8",
-    "yet-another-react-lightbox": "^3.25.0"
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
