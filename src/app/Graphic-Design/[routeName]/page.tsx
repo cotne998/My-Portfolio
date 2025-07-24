@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { use } from "react";
+import Image from "next/image";
 
 export default function Page({
   params,
@@ -59,11 +60,12 @@ export default function Page({
               data-aos="fade-left"
               id="wrapper"
               className="flex h-full w-full">
-              <img
+              <Image
+                fill
                 data-aos="flip-left"
                 loading="lazy"
                 className="object-contain w-full h-full rounded-2xl bg-black"
-                src={currentPath}
+                src={currentPath ?? "/placeholder.png"}
                 onClick={() => setOpen(true)}
                 alt="example image"
               />
