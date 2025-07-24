@@ -54,6 +54,7 @@ export default function page({ params }: { params: { routeName: string } }) {
               id="wrapper"
               className="flex h-full w-full">
               <img
+                data-aos="flip-left"
                 loading="lazy"
                 className="object-contain w-full h-full rounded-2xl bg-black"
                 src={currentPath}
