@@ -6,13 +6,19 @@ import { AnimatePresence, motion } from "framer-motion";
 interface Nav {
   name: string;
   path: string;
+  route: string;
 }
 
 const navigation: Nav[] = [
-  { name: "Home", path: "/assets/icon-home.svg" },
-  { name: "About", path: "/assets/icon-person.svg" },
-  { name: "Projects", path: "/assets/icon-project.svg" },
-  { name: "Resume", path: "/assets/icon-document.svg" },
+  { name: "Home", path: "/assets/icon-home.svg", route: "Home" },
+  { name: "About", path: "/assets/icon-person.svg", route: "About" },
+  { name: "Projects", path: "/assets/icon-project.svg", route: "Projects" },
+  {
+    name: "Graphic Design",
+    path: "/assets/icon-graphic-design.svg",
+    route: "Graphic-Design",
+  },
+  { name: "Resume", path: "/assets/icon-document.svg", route: "Resume" },
 ];
 
 export default function Header() {
@@ -58,7 +64,7 @@ export default function Header() {
                   key={index}
                   className="cursor-pointer hover:text-[#27DEBF] transition-[0.2s] xl:text-[18px] flex gap-2 items-center">
                   <img src={item.path} alt="" />
-                  <Link href={`/${item.name}`}>{item.name}</Link>
+                  <Link href={`/${item.route}`}>{item.name}</Link>
                 </li>
               );
             })}
@@ -98,7 +104,7 @@ export default function Header() {
                     onClick={() => setDisplayMenu(false)}
                     className="text-white flex items-center gap-2">
                     <img src={item.path} alt="" className="w-[17px] " />
-                    <Link href={`/${item.name}`}>{item.name}</Link>
+                    <Link href={`/${item.route}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>

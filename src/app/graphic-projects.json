@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Wedding",
+    "description": "Designed a set of elegant wedding cards, including the main invitation, welcome card, and thank you card — all in a consistent romantic style suitable for print.",
+    "route": "wedding",
+    "thumbnail": "/assets/thumbnail-wedding.png",
+    "children": {
+      "images": [
+        "/assets/image-invitation.jpg",
+        "/assets/image-welcome.jpg",
+        "/assets/image-thankyou.jpg"
+      ]
+    }
+  },
+  {
+    "name": "Game Posters",
+    "description": "Videogame posters created with photoshop.",
+    "route": "video-game-posters",
+    "thumbnail": "/assets/thumbnail-detroit.png",
+    "children": {
+      "images": ["/assets/image-detroit.jpg", "/assets/image-watch-dogs.jpg"]
+    }
+  },
+  {
+    "name": "My brand design",
+    "description": "A brand logo created for use on various products, including clothing.",
+    "route": "my-brand",
+    "thumbnail": "/assets/thumbnail-my-logo.png",
+    "children": {
+      "images": [
+        "/assets/image-my-logo.png",
+        "/assets/image-clothes-mockup.jpg",
+        "/assets/image-clothes-mockup2.jpg",
+        "/assets/image-hanger.jpg",
+        "/assets/image-cap-mockup.jpg",
+        "/assets/image-cap-mockup2.jpg",
+        "/assets/image-cap-mockup3.png"
+      ]
+    }
+  },
+  {
+    "name": "Photo Retouch",
+    "description": "Photo retouching examples created with personal inspiration and creative editing.",
+    "route": "retouch",
+    "thumbnail": "/assets/thumbnail-retouch.png",
+    "children": {
+      "images": ["/assets/thumbnail-retouch.png", "/assets/image-retouch.png"]
+    }
+  },
+  {
+    "name": "Butter Product Design",
+    "description": "Simple butter packaging design created using Adobe Illustrator and Photoshop.",
+    "route": "butter-design",
+    "thumbnail": "/assets/thumbnail-butter.png",
+    "children": {
+      "images": [
+        "/assets/thumbnail-butter.png",
+        "/assets/image-butter-wide.png",
+        "/assets/image-butter-round.png",
+        "/assets/image-butter-rectangle.png"
+      ]
+    }
+  },
+  {
+    "name": "Pamela Learning Centre",
+    "description": "Logo design with different variations for Pamela Learning Centre.",
+    "route": "pamela-learning-centre",
+    "thumbnail": "/assets/thumbnail-pamela.png",
+    "children": {
+      "images": [
+        "/assets/thumbnail-pamela.png",
+        "/assets/image-pamela-1.png",
+        "/assets/image-pamela-2.png",
+        "/assets/image-pamela-black.jpg"
+      ]
+    }
+  },
+  {
+    "name": "Visit Card Design",
+    "description": "Visit card design created with Adobe Illustrator.",
+    "route": "visit-card",
+    "thumbnail": "/assets/thumbnail-visit-card.png",
+    "children": {
+      "images": [
+        "/assets/thumbnail-visit-card.png",
+        "/assets/image-visit-card-front.png",
+        "/assets/image-visit-card-back.png"
+      ]
+    }
+  },
+  {
+    "name": "Firm Foundation Logo Design",
+    "description": "Badge-style logo design for educational organization 'Firm Foundation', suitable for school uniforms, books, and more. ",
+    "route": "firm-foundation",
+    "thumbnail": "/assets/thumbnail-firm-foundation.png",
+    "children": {
+      "images": [
+        "/assets/thumbnail-firm-foundation.png",
+        "/assets/image-firm-foundation-2.png",
+        "/assets/image-firm-foundation-mockup.jpg",
+        "/assets/image-firm-foundation-logo-1.png",
+        "/assets/image-firm-foundation-logo-2.png"
+      ]
+    }
+  },
+  {
+    "name": "Advertisement Poster Design",
+    "description": "Versatile ad poster designed for both digital and print use, including social media and billboards.",
+    "route": "advertisement-design",
+    "thumbnail": "/assets/thumbnail-advertisement.png",
+    "children": {
+      "images": [
+        "/assets/thumbnail-advertisement.png",
+        "/assets/image-advertisement.png"
+      ]
+    }
+  },
+  {
+    "name": "Illustrations",
+    "description": "Illustrator artworks from my early creative journey, made to explore and improve my skills.",
+    "route": "illustrations",
+    "thumbnail": "/assets/thumbnail-illustrations.png",
+    "children": {
+      "images": [
+        "/assets/thumbnail-illustrations.png",
+        "/assets/image-illustration-nature.png",
+        "/assets/image-illustration-east.png",
+        "/assets/image-illustration-vake.jpg",
+        "/assets/image-illustration-desert.png"
+      ]
+    }
+  }
+]

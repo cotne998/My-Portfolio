@@ -13,3 +13,11 @@ body {
   min-height: 100vh;
   background-color: #272727;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE და Edge */
+  scrollbar-width: none; /* Firefox */
+}

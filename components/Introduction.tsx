@@ -14,6 +14,7 @@ export default function Introduction() {
       "Creative Coder",
       "Web Interface Specialist",
       "UI/UX Designer",
+      "Graphic Designer",
       "React & TypeScript Developer",
     ],
     loop: true,
