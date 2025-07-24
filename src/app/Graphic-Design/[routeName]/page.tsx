@@ -7,7 +7,11 @@ import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-export default function page({ params }: { params: { routeName: string } }) {
+export default function RouteName({
+  params,
+}: {
+  params: { routeName: string };
+}) {
   const project = data.find((item) => item.route === params.routeName);
   const [currentPath, setCurrentPath] = useState<string | undefined>(
     project?.children?.images?.[0] ?? undefined
