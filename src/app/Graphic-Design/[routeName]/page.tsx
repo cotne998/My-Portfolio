@@ -6,15 +6,15 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { use } from "react";
 
-interface PageProps {
-  params: {
-    routeName: string;
-  };
-}
-
-export default function Page({ params }: PageProps) {
-  const project = data.find((item) => item.route === params.routeName);
+export default function Page({
+  params,
+}: {
+  params: Promise<{ routeName: string }>;
+}) {
+  const { routeName } = use(params);
+  const project = data.find((item) => item.route === routeName);
   const [currentPath, setCurrentPath] = useState<string | undefined>(
     project?.children?.images?.[0] ?? undefined
   );
