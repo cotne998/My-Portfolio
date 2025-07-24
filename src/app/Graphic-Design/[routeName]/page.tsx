@@ -96,10 +96,11 @@ export default function Page({
             )}
           </AnimatePresence>
         </section>
-
-        <button className="text-[#020202be] bg-[#27DEBF] text-[12px] md:text-[14px] xl:text-[16px] rounded-2xl px-5 py-2 font-semibold cursor-pointer hover:bg-[#7decda] transition-[0.2s]">
-          <Link href={"/Graphic-Design"}>Back to projects</Link>
-        </button>
+        <Link href={"/Graphic-Design"}>
+          <button className="text-[#020202be] bg-[#27DEBF] text-[12px] md:text-[14px] xl:text-[16px] rounded-2xl px-5 py-2 font-semibold cursor-pointer hover:bg-[#7decda] transition-[0.2s]">
+            Back to projects
+          </button>
+        </Link>
       </div>
     </>
   );
