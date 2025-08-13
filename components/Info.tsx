@@ -50,7 +50,7 @@ export default function Info() {
       </div>
       <div className="flex flex-col items-center gap-3 xl:gap-7">
         <img
-          src="/assets/image-me.png"
+          src="/assets/image-me_result.webp"
           alt="contact image"
           className="w-[85px] xl:w-[130px]"
           data-aos="zoom-in-up"
