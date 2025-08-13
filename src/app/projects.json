@@ -4,55 +4,55 @@
     "description": "MultiPlay is a React-based web app featuring simple 2-player games, built with Tailwind CSS, Context API & Swiper.js. The project is actively maintained with new updates coming soon.",
     "repo": "https://github.com/cotne998/MultiPlay",
     "live": "https://multi-play-silk.vercel.app/",
-    "thumbnail": "/assets/thumbnail-multiplay.png"
+    "thumbnail": "/assets/thumbnail-multiplay_result.webp"
   },
   {
     "name": "Audiophile Ecommerce Website",
     "description": "Audiophile is a responsive eCommerce site for premium audio gear, built with React, TypeScript, and useReducer.",
     "repo": "https://github.com/cotne998/audiophile-ecommerce-website-2",
     "live": "https://audiophile-ecommerce-website-2.vercel.app/",
-    "thumbnail": "/assets/thumbnail-audiophile.png"
+    "thumbnail": "/assets/thumbnail-audiophile_result.webp"
   },
   {
     "name": "Entertaining Web App",
     "description": "Entertaining Web App is a React app for browsing movies and TV shows, featuring search, filters, and a responsive UI.",
     "repo": "https://github.com/cotne998/Entertaining-web-app",
     "live": "https://entertaining-web-app.vercel.app/",
-    "thumbnail": "/assets/thumbnail-entertaining.png"
+    "thumbnail": "/assets/thumbnail-entertaining_result.webp"
   },
   {
     "name": "Digital Corp",
     "description": "A modern team portfolio site built with React and TypeScript, showcasing team members, goals, and values with a clean, responsive design.",
     "repo": "https://github.com/cotne998/DigitalCorp",
     "live": "https://digital-corp.vercel.app/",
-    "thumbnail": "/assets/thumbnail-digital.png"
+    "thumbnail": "/assets/thumbnail-digital_result.webp"
   },
   {
     "name": "Ecommerce Product Page",
     "description": "A single product page built with React, featuring detailed product info and an add-to-cart functionality. Designed with a clean layout and smooth user interaction.",
     "repo": "https://github.com/cotne998/eCommerce-product-page",
     "live": "https://e-commerce-product-page-nu-one.vercel.app/",
-    "thumbnail": "/assets/thumbnail-ecommerce.png"
+    "thumbnail": "/assets/thumbnail-ecommerce_result.webp"
   },
   {
     "name": "Lukoil Georgia Homepage Redesign",
     "description": "This is a redesigned and upgraded main page of Lukoil.ge georgian website. The redesign was completed with Tailwind.css and some libraries such as Swiper.js.",
     "repo": "https://github.com/cotne998/Lukoil-Page-Redesign",
     "live": "https://lukoil-page-redesign.vercel.app/",
-    "thumbnail": "/assets/thumbnail-lukoil.png"
+    "thumbnail": "/assets/thumbnail-lukoil_result.webp"
   },
   {
     "name": "GitHub User Search",
     "description": "A React app that lets you search for GitHub users by username. Fetches and displays user data in real-time using the GitHub API.",
     "repo": "https://github.com/cotne998/Lukoil-Page-Redesign",
     "live": "https://github-user-search-six-indol.vercel.app/",
-    "thumbnail": "/assets/thumbnail-github.png"
+    "thumbnail": "/assets/thumbnail-github_result.webp"
   },
   {
     "name": "Planets Fact Site",
     "description": "An informative React website about planets, featuring dynamic routing for each planet's detail page.",
     "repo": "https://github.com/cotne998/Planets-fact-site",
     "live": "https://planets-fact-site-five-psi.vercel.app/",
-    "thumbnail": "/assets/thumbnail-planets.png"
+    "thumbnail": "/assets/thumbnail-planets_result.webp"
   }
 ]
