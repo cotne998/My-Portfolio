@@ -1,5 +1,12 @@
 [
   {
+    "name": "IP Address Tracker",
+    "description": "IP Address Tracker – A Frontend Mentor project that lets users enter an IPv4 address to see its location details. Built with React.js, Tailwind CSS, and a geolocation API.",
+    "repo": "https://github.com/cotne998/IP-Address-Tracker",
+    "live": "https://ip-address-tracker-indol-three.vercel.app/",
+    "thumbnail": "/assets/thumbnail-ip-address.webp"
+  },
+  {
     "name": "MultiPlay",
     "description": "MultiPlay is a React-based web app featuring simple 2-player games, built with Tailwind CSS, Context API & Swiper.js. The project is actively maintained with new updates coming soon.",
     "repo": "https://github.com/cotne998/MultiPlay",

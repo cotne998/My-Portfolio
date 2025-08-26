@@ -59,11 +59,13 @@ export default function ProjectsPage() {
           {data.map((item, idx) => (
             <SwiperSlide key={idx} className="h-full">
               <div className="cursor-grab active:cursor-grabbing hover:scale-[1.04] transition-[0.2s] flex flex-col justify-between gap-5 p-3 border-1 border-[#27dec000] rounded-[10px] bg-[#1e1e1e] shadow-[0_0_12px_2px_#27dec039] hover:shadow-[0_0_12px_8px_#27DEBF66]  xl:min-h-[600px] xl:p-8 xl:gap-8">
-                <img
-                  src={item.thumbnail}
-                  alt="project thumbnail"
-                  className="rounded-[10px]"
-                />
+                <div className="h-[200px] md:min-h-[300px] rounded-xl flex justify-center">
+                  <img
+                    src={item.thumbnail}
+                    alt="project thumbnail"
+                    className="w-full h-full object-cover rounded-[10px]"
+                  />
+                </div>
                 <div className="flex flex-col gap-5 xl:gap-10">
                   <h2 className="text-center text-white text-[18px] xl:text-[28px]">
                     {item.name}
