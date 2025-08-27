@@ -45,7 +45,7 @@ export default function ProjectsPage() {
               <div
                 key={i}
                 data-aos="fade-up"
-                className="flex flex-col p-5 shadow-[0_0_12px_2px_#27dec039] transition-[0.2s] rounded-[10px] hover:scale-[1.01]  hover:shadow-[0_0_12px_8px_#27DEBF66]">
+                className="flex flex-col p-2 shadow-[0_0_12px_2px_#27dec039] transition-[0.2s] rounded-[10px] hover:scale-[1.01]  hover:shadow-[0_0_12px_8px_#27DEBF66]">
                 <div className="flex flex-col items-center gap-5 p-2 md:items-center md:flex-row md:justify-between   rounded-[10px]">
                   <div className="flex items-center gap-8">
                     <img
@@ -100,7 +100,7 @@ export default function ProjectsPage() {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
-                      className="text-[#ffffffb4] text-[12px] xl:text-[16px] text-center xl:w-[700px] m-auto overflow-hidden">
+                      className="text-[#ffffffb4] text-[12px] xl:text-[16px] text-center md:max-w-[700px] m-auto overflow-hidden">
                       {item.description}
                     </motion.p>
                   )}
