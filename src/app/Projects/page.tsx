@@ -45,8 +45,8 @@ export default function ProjectsPage() {
               <div
                 key={i}
                 data-aos="fade-up"
-                className="flex flex-col p-2 shadow-[0_0_12px_2px_#27dec039] transition-[0.2s] rounded-[10px] hover:scale-[1.01]  hover:shadow-[0_0_12px_8px_#27DEBF66]">
-                <div className="flex flex-col items-center gap-5 p-2 md:items-center md:flex-row md:justify-between   rounded-[10px]">
+                className="flex flex-col p-2 shadow-[0_0_12px_2px_#27dec039]  rounded-[10px] hover:shadow-[0_0_12px_8px_#27DEBF66] transition-[0.2s]">
+                <div className="flex flex-col items-center  gap-5 p-2 md:items-center md:flex-row md:justify-between rounded-[10px]">
                   <div className="flex items-center gap-8">
                     <img
                       src={item.thumbnail}
