@@ -33,9 +33,9 @@ export default function ProjectsPage() {
       </h1>
       <button
         onClick={() => setIsList(!isList)}
-        className={`w-[130px] bg-${
-          isList ? "[#27DEBF]" : null
-        } text-white cursor-pointer rounded-2xl px-3 py-[3px] text-[12px] md:text-[14px] transition-[0.2s] hover:scale-[1.1] active:scale-[1] my-5`}>
+        className={`w-[130px] bg-${isList ? "[#27DEBF]" : null} text-${
+          isList ? "#020202be" : "white"
+        } cursor-pointer rounded-2xl px-3 py-[3px] text-[12px] md:text-[14px] transition-[0.2s] hover:scale-[1.1] active:scale-[1] my-5`}>
         Show as list
       </button>
       {isList ? (
